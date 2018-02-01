@@ -33,7 +33,7 @@ gulp.task('views', function buildHTML() {
 gulp.task('styles', function () {
   return gulp.src('./src/styles/main.scss')
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-    .pipe(rename('main.min.scss'))
+    .pipe(rename('main.min.css'))
     .pipe(gulp.dest('build/css'));
 });
 
