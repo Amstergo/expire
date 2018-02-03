@@ -28,9 +28,10 @@
 
   &-item {
     margin: 0 25px;
-    padding: 0 7px 5px;
+    padding: 0 7px;
     position: relative;
     overflow: hidden;
+    line-height: 2;
   }
 
   &-item:after {

@@ -3,26 +3,4 @@ meta(charset='UTF-8')
 link(rel="stylesheet" href="/css/main.min.css")
 meta(name="viewport" content="width=device-width, initial-scale=1")
 
-.header
-  .container
-    .header__menu
-      mixin list(name)
-        ul.header__menu-list
-          each i in name
-            if i === 'home'
-              li.header__menu-item.header__menu-item--active
-                a(href="#")= i
-            else
-              li.header__menu-item
-                a(href="#")= i
-
-      - var itemsLeft = ["home", "portfolio", "blog"];
-      +list(itemsLeft)
-
-      .header__logo
-        a(href="#")
-          img(src='./images/logo.png')
-          span Expire
-
-      - var itemsRight = ["pages", "about us", "contact"];
-      +list(itemsRight)
+include sections/header.pug
