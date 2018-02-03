@@ -1,10 +1,8 @@
 @import "../../node_modules/font-awesome/scss/font-awesome";
 @import "../../node_modules/normalize-scss/sass/normalize";
 
-body {
-  background: red;
-}
+@import "./global/fonts";
+@import "./global/base";
+@import "./global/commons";
 
-h1 {
-  background: #303030;
-}
+@import './section/header';
