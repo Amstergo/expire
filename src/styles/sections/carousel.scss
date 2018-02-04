@@ -1,0 +1,48 @@
+.carousel {
+  background-color: #3D4148;
+  color: white;
+  padding: 177px 0;
+
+  &__title {
+    font-size: 400%;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+  }
+
+  &__desc {
+    font-size: 300%;
+    letter-spacing: 1px;
+    width: 80%;
+    margin: 65px 0;
+  }
+
+  &__button {
+
+    & button {
+      background-color: inherit;
+      border: 1px solid white;
+      padding: 15px 40px;
+      font-size: 100%;
+      text-transform: uppercase;
+      color: white;
+      font-family: 'Raleway';
+      font-weight: 600;
+      cursor: pointer;
+      transition: .3s;
+
+      &:first-child {
+        margin-right: 10px;
+      }
+
+      &:last-child {
+        padding: 15px 22px;
+      }
+
+      &:hover {
+        background-color: #EF402A;
+        border-color: #EF402A;
+      }
+    }
+  }
+}

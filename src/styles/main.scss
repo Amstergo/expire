@@ -1,8 +1,13 @@
 @import "../../node_modules/font-awesome/scss/font-awesome";
 @import "../../node_modules/normalize-scss/sass/normalize";
 
+
+// Global
 @import "./global/fonts";
 @import "./global/base";
 @import "./global/commons";
 
-@import './section/header';
+// Views
+@import './sections/header';
+@import './sections/carousel';
+@import './sections/about';
